@@ -1,20 +1,6 @@
-# Peptide indentity and abundance analyze from raw data
+# Peptide identity and abundance analyze from raw data and pretrain model for predict abundance
 
-Effective and helpful methods for better understanding teaching in science, technology, engineering, and mathematics (
-STEM) are of special interest in the field of pedagogy research. Many works have proposed using carefully crafted
-inventory questionnaires for characterizing class performance and behaviors, such as the Teaching Practices
-Inventory and the Postsecondary Instructional Practices Survey. However, most existing methods require trained
-personnel to get familiar with the questionnaire and further manual profiling, which is error-prone, subjective to the
-observer, and time-consuming. This inspires us to explore an automated way of profiling or characterizing class
-activities to assist teachers and researchers in the field for a large-scale and objective assessment.
-
-This project aims to use multi-modal sensors to profile class lectures and generate meaningful reports for instructors
-or interested
-supervisors. Specifically, in this project, we adopted temperature, air quality, visual, and acoustic information to
-profile the progress of a class. This repo stores codes that implement this project.
-
-We use a dual client-server architecture as shown below. For local testing, please make sure all user devices, the
-Raspberry Pi, and the remote machine learning server are connected in the same LAN.
+In the realms of proteomics and bioinformatics, the accurate identification and quantification of peptides are pivotal. This project, "Peptide Identity and Abundance Analysis from Raw Data and Pretrained Model for Predict Abundance," aims to unravel the intricate details of peptide sequences and their abundance, integrating both conventional analytical workflows and advanced machine learning models. Through a synergy of OpenMS-based workflows and BERT-based pretrained models, we endeavor to provide a comprehensive solution that caters to both the accuracy and efficiency required in modern proteomic analysis.
 
 ## Get peptides and abundance from raw data
 
