@@ -23,6 +23,7 @@ To get the sequences and abundances from raw data. There are three ways.
 ### OpenSwathWorkflow
 
 The OpneSwath workflow has high accuracy, but the workflow costs time. To run this workflow, you first need to download OpenMS, you can download by the following link, https://openms.readthedocs.io/en/latest/openms-applications-and-tools/installation.html. Then, you can follow paper “Building high-quality assay libraries for targeted analysis of SWATH MS data” procedure part to run the prepare and identity part. (https://www.nature.com/articles/nprot.2015.015#Sec18). After procedures in the paper, you can run the last quantity analyze, which like
+
 ```shell
 OpenSwathWorkflow.exe
 -in data.mzML -tr library.tsv
