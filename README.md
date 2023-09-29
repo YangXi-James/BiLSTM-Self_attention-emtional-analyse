@@ -48,56 +48,29 @@ To run this workflow, you First need to convert the raw data to mzML data.  To c
 After you get mzML data, you can run the openmsLFQ workflow. First, you can add the mzML data in input files. At the same time, you also need to add FASTA database, and I provide the uniport.fasta for you. Then you can run the workflow and get the result.
 
 
+
+
+## Bert-based Pretrain model
+
+This part descibes pre-trained BERT models for the obtained data. Fine-tuned Camembert and Distilbert models, establishing the corresponding models. By masking sequences, the models are utilized to predict abundance values.
+
 ### Installation
 After cloning this repo, please enter the folder and run:
 ```shell
 pip install -r requirements.txt
 ```
 
-## Bert-based Pretrain model
+## Usage
 
-This part descibes pre-trained BERT models for the obtained data. Fine-tuned Camembert and Distilbert models, establishing the corresponding models. By masking sequences, the models are utilized to predict abundance values.
-
-1. Please first start the remote machine learning server by running:
+Run Distilbert
 
 ```shell
-python speech_diarization_server.py
+python Distilbert.py
 ```
 
-This opens port 5000 to accept the audio clip from the Raspberry Pi.
 
-2. Please run
+Run Camembert
 
 ```shell
-ifconfig
+python Camembert.py
 ```
-
-to get the IP address of the remote machine learning server. Then, change Line 25 in `main.py` from:
-
-```python
-REMOTE_SERVER_ENDPOINT = 'http://192.168.182.46:5000/process_audio'
-```
-
-to
-
-```python
-REMOTE_SERVER_ENDPOINT = 'http://<IP OF YOUR REMOTE ML SERVER>:5000/process_audio'
-```
-
-3. On the Raspberry Pi, run:
-
-```shell
-python main.py
-```
-
-which listens on port 12300 for client connections.
-
-4. Please run
-
-```shell
-ifconfig
-```
-
-to get the IP address of the Raspberry Pi.
-
-5. On your client device, open the browser and enter `http://<IP OF RASPBERRY PI>:12300` to access the dashboard.
