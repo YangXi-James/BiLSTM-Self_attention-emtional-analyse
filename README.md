@@ -39,7 +39,7 @@ Maxquant is the easiest workflow, but the peptide search results are not complet
 
 ## Bert-based Pretrain model
 
-This part descibes pre-trained BERT models for the obtained data. Fine-tuned Camembert and Distilbert models, establishing the corresponding models. By masking sequences, the models are utilized to predict abundance values.
+This section delves into the utilization of pre-trained BERT models, specifically focusing on the intricacies of applying fine-tuned Camembert and Distilbert models to the data procured. These models are meticulously adapted and established with the aim of predicting the abundance values of peptides, demonstrating a harmonious blend of machine learning and bioinformatics. The method involves the technique of masking sequences, a strategy that enables the models to comprehend and infer the contextual relationships within the peptide sequences, thereby enhancing the accuracy and reliability of the abundance predictions. The application of these advanced models exemplifies a pivotal step in leveraging computational intelligence to unravel the complexities of proteomic data.
 
 ### Installation
 After cloning this repo, please enter the folder and run:
