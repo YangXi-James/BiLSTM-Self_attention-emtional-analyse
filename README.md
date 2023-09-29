@@ -33,7 +33,8 @@ This workflow is faster than the OpneSwath and it is also based on OpenMS, so yo
 To run this workflow, you First need to convert the raw data to mzML data.  To convert the raw data, you can use MSconvert, you can download from (https://proteowizard.sourceforge.io/download.html). To use MSconvert, you can add the raw files and choose the output file data type mzML, and then run and get the mzML data.
 After you get mzML data, you can run the openmsLFQ workflow. First, you can add the mzML data in input files. At the same time, you also need to add FASTA database, and I provide the uniport.fasta for you. Then you can run the workflow and get the result.
 
-
+### Maxquant
+Maxquant is the easiest workflow, but the peptide search results are not complete.To use this workflow, you can download the maxquant from (https://www.maxquant.org/download_asset/maxquant/latest) . To run this workflow, you can first load the raw data. Then, click no fraction to set experiment. After that, set quantity index. You can click label-free quantification and choose LFQ. Then, click global parameters and add  the uniport.fasta I provided to you. Then you can run the workflow and get the result.
 
 
 ## Bert-based Pretrain model
