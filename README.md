@@ -39,7 +39,7 @@ OpenSwathWorkflow.exe
 -RTNormalization:alignmentMethod linear
 -Scoring:stop_report_after_feature 5
 -out_tsv osw_output.tsv
-```shell
+```
 
 ### On the remote machine learning server
 
