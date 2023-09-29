@@ -41,23 +41,16 @@ OpenSwathWorkflow.exe
 -out_tsv osw_output.tsv
 ```
 
-### On the remote machine learning server
+### OpenmsLFQ
 
-After cloning this repo, please enter the folder and run:
+This workflow is faster than the OpneSwath and it is also based on OpenMS, so you also need to download the OpenMS(see first part). I provided a built workflow named openmsLFQ.knwf you can directly use. To use this built workflow, you need to download an analytics platform KNIME(https://www.knime.com/downloads). After downloading it, you can open the file I provided. 
+To run this workflow, you First need to convert the raw data to mzML data.  To convert the raw data, you can use MSconvert, you can download from (https://proteowizard.sourceforge.io/download.html). To use MSconvert, you can add the raw files and choose the output file data type mzML, and then run and get the mzML data.
+After you get mzML data, you can run the openmsLFQ workflow. First, you can add the mzML data in input files. At the same time, you also need to add FASTA database, and I provide the uniport.fasta for you. Then you can run the workflow and get the result.
 
-```shell
-chmod +x requirements_nemo.sh
-./requirements_nemo.sh
-```
 
-This creates a conda virtual environment called `nemo`. If you have not installed conda, please do so or check the
-script to use pip install the requirements. Then, run:
+### Maxquant
 
-```shell
-conda activate nemo
-```
-
-to activate the environment.
+This workflow is the easiest workflow, but the peptide search results are not complete.To use this workflow, you can download the maxquant from (Download asset (maxquant.org)) . To run this workflow, you can first load the raw data. Then, click no fraction to set experiment. After that, set quantity index. You can click label-free quantification and choose LFQ. Then, click global parameters and add  the uniport.fasta I provided to you. Then you can run the workflow and get the result.
 
 ## Usage
 
