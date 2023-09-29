@@ -50,7 +50,7 @@ After you get mzML data, you can run the openmsLFQ workflow. First, you can add 
 
 ### Maxquant
 
-This workflow is the easiest workflow, but the peptide search results are not complete.To use this workflow, you can download the maxquant from ([Download asset (maxquant.org)](https://www.maxquant.org/download_asset/maxquant/latest)) . To run this workflow, you can first load the raw data. Then, click no fraction to set experiment. After that, set quantity index. You can click label-free quantification and choose LFQ. Then, click global parameters and add  the uniport.fasta I provided to you. Then you can run the workflow and get the result.
+This workflow is the easiest workflow, but the peptide search results are not complete.To use this workflow, you can download the maxquant from (https://www.maxquant.org/download_asset/maxquant/latest) . To run this workflow, you can first load the raw data. Then, click no fraction to set experiment. After that, set quantity index. You can click label-free quantification and choose LFQ. Then, click global parameters and add  the uniport.fasta I provided to you. Then you can run the workflow and get the result.
 
 ## Usage
 
