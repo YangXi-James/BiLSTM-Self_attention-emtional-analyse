@@ -48,11 +48,15 @@ To run this workflow, you First need to convert the raw data to mzML data.  To c
 After you get mzML data, you can run the openmsLFQ workflow. First, you can add the mzML data in input files. At the same time, you also need to add FASTA database, and I provide the uniport.fasta for you. Then you can run the workflow and get the result.
 
 
-### Maxquant
+### Installation
+After cloning this repo, please enter the folder and run:
+```shell
+pip install -r requirements.txt
+```
 
-This workflow is the easiest workflow, but the peptide search results are not complete.To use this workflow, you can download the maxquant from (https://www.maxquant.org/download_asset/maxquant/latest) . To run this workflow, you can first load the raw data. Then, click no fraction to set experiment. After that, set quantity index. You can click label-free quantification and choose LFQ. Then, click global parameters and add  the uniport.fasta I provided to you. Then you can run the workflow and get the result.
+## Bert-based Pretrain model
 
-## Usage
+This part descibes pre-trained BERT models for the obtained data. Fine-tuned Camembert and Distilbert models, establishing the corresponding models. By masking sequences, the models are utilized to predict abundance values.
 
 1. Please first start the remote machine learning server by running:
 
